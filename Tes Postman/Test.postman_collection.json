@@ -1,0 +1,430 @@
+{
+	"info": {
+		"_postman_id": "3621e9c4-a590-418e-964c-ad0dd043957b",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23362118"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Get Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/category",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Category By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/category/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Ferrari",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/category",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Maclaren",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PATCH",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/category/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "B2B",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PATCH",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/category/11",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mobil",
+			"item": [
+				{
+					"name": "Get Mobil",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTU1N2EyYWE0NDQ2YTY4MGNkMzU1ZWE1OTIzZWMxNzM4YTBkMjdhZjM4NTBkOTY4NjAyNTIwOWExYTBiOTZkMGUzZDBhYmZjNmZjZTFmYmQiLCJpYXQiOjE2Nzg2NzI4MDkuNjM2MDcyLCJuYmYiOjE2Nzg2NzI4MDkuNjM2MDc0LCJleHAiOjE3MTAyOTUyMDkuNjE5ODQyLCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.Q_e2pljV27GeFsWVV3fTRRKvCtRTMQG5edI_YpBY39GJ-51HvScHCtAYT1TPwE_f6PDB0holemKOzf7BniFRMtQtKJ1NsZxs5J3amGYX4c9ysed8VaECJeO00xzlK6kS6GSneJtG7Svd3SDjv8Iu2AvDdvc6Y7PbSbx12dxkw5y-hIF4g05Vg36xiGRvTQ2OjkUiDLcd5f6ySajlDAq_B7C94SZLI2_3ZqHA_Xi8oZlgPuagp6CbkRp0IT29Ey9KT2mlApQiQ0JzeuLfzQZLYt6RZfQe6sRq2VJ8t3td4HXSzbM3j1eD2RDmcAxz01kPG75r5FogmFnMMIg3HwRrgbLEAR9MGl3h4fGxgljbeY0JEiNQJZpEgoe_nuJy_9fss_tgktT7Ttle3fbCPYnyMk2LyWFqBgkF97JUp9VbnzDDTnUXXn_Ky6L3AawToH7H_kXnBYTgVC9S-f7kPaqmN1nccrsFMqj7CRhr-OOTRS_qG8TWmugPEHN9VDVGWO1_BZGrpajVcsoNOoOB2yFfDkDsM4xV4GE8_ujYWTUxdWH7qtGT3boAwL5V2X1ULX9oXEKDgZynKDM-kINcdVYHRqQ1ztMl4DN2R8SG8GDeXMmiAXBu0zGzPYPbpW-SB_qIAsjvo3hjzoNm_ok9d0dXhONteBc3CKh9OP9spaaBQnQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYWE0M2RiZWRhZDJlNDRlMDZkZjkwNTExY2E5ZDA2Y2IyZjg3YjNmYmZjY2Q2MDQ5MGE2ZTVmNDI3YmZkNDQ4ZTE1YjRmOTg5ZDcyYmZmNGQiLCJpYXQiOjE2Nzg2NzMyMjguNDM1OTA5LCJuYmYiOjE2Nzg2NzMyMjguNDM1OTExLCJleHAiOjE3MTAyOTU2MjguNDE5OTU4LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.BDXTl8QuEND_33woI3l_JvjV_mPjyrLiQ3XIHAf-9BVM76zeCDoX1QMcpzs2apvwuEjHN7AwCrmWqSg2lfLwnIyEMuWqLMDHTJK6Qgqt6GORlIMEwgd79OlceVKkNPKD-q2lzKVp6mu8ipWkV2-CsilIvh9yhkcrSX_TxKJlWmLjuHPYwp7lGKIr2cSCoVU8Bym3TE838K7eizNVkhI4T9VPrsl12_rJg-PzUQhB5fEEsKZLCjkGk7PRD4iPXjwRsUlChDQK29Nk9uekhlVbSrm6utMbD3_C7b9VMQ6f1F8BFEkeo4vM0p_oSfNaY9EIembN6hFaOtOohwF_S7Qn4hltqGmOuVYnhYW-2wW8JtRDSoow-Wgi2tMYYsk9KLnwqaVQW49f0NMUGdfndqqrJKZ1J4jEtqv7pmpj5SVK_H0zrY5RU3ju0ZBnw2fnWS_94aps1C_aLlQHk_a0_o-iuWb-CctwMLsSs2okt9S8mZ3nK2MQ6zqib9LLeZu11tWY3vck6GZxaNj4OXUO02yaY-ZCcCdUvykEKt826xlFg7C_c8TCNp8fMZgT5xI30pQNszOxmfzGq3lNJ5-BJrpDfZEvwvTrMnbpWgB0S8ZAbsYt0_a-2q-YK7H9GWIB3Jv74sGRNVMToRFyMcoO_CTYMNMJAnUp7BHo8wddHHq_aDY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v1/mobil",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mobil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Mobil By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/mobil/8",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mobil",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Mobil",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Ferrari Merah",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "Ferarri Merah",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Safah/OneDrive/Pictures/Saved Pictures/607d17d5a3689.jpeg"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/mobil",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mobil"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Mobil",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Aku",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "Fortuner Putih",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Safah/OneDrive/Pictures/Saved Pictures/Untitled.jpg"
+								},
+								{
+									"key": "_method",
+									"value": "PATCH",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/mobil/9",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mobil",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Mobil",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "B2B",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PATCH",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/mobil/7",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mobil",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Hafizh",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test4@test.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password12345",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "password12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
